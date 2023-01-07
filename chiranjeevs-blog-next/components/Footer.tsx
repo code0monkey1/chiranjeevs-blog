@@ -4,10 +4,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="container mx-auto fixed bottom-0 flex w-full">
-        <div>
-         
-          </div>
+    <footer className="container mx-auto fixed bottom-0 flex w-full justify-around">
           <Link href="/">
             <div className="flex flex-auto ">
             

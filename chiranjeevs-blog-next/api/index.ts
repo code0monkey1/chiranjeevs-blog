@@ -1,19 +1,20 @@
+
+
 import axios from 'axios';
 
-
 const api = axios.create({
-    baseURL:process.env.API_BASE_URL,
+    baseURL: process.env.API_BASE_URL,
     headers: {
-      Authorization: 'Bearer ' +`${process.env.TOKEN}`
-    }
-})
+        Authorization: `Bearer ${process.env.TOKEN}`,
+    },
+});
 
+// Categories
+export const fetchCategories = async () => api.get('/api/categories');
 
-//categories
+// Articles
+export const fetchArticles = async (queryString: string) =>
+    api.get(`/api/articles?${queryString}`);
 
-export const fetchCategories = async () =>  api.get('/api/categories')
-
-
-//articles
-
-export const fetchArticles = async () => api.get('/api/articles')
+export const fetchArticleBySlug = async (queryString: string) =>
+    api.get(`/api/articles?${queryString}`);

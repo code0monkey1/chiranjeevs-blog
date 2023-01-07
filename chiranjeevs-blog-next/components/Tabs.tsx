@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { ICategory } from '../types';
 
+
 interface IPropType {
     categories:ICategory[];
 }
@@ -33,7 +34,7 @@ const handleOnSearch=(query: string)=>{
                         }`
                     }>
 
-            <Link href="#">Recent</Link>
+            <Link href="/">Recent</Link>
             
           </li>
         {

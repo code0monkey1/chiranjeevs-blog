@@ -21,7 +21,7 @@ const BlogCard = ({article}:IPropType) => {
 
        <div className="flex items-center">
          
-          {/* <div className="mx-4 rounded-lg overflow-hidden flex items-center justify-center">
+          <div className="mx-4 rounded-lg overflow-hidden flex items-center justify-center">
 
               <Image
               alt="profile_image"
@@ -32,7 +32,7 @@ const BlogCard = ({article}:IPropType) => {
                         height={40}
                         width={40}
                     />
-          </div> */}
+          </div>
 
           <div className="text-sm  font-bold text-gray-600 mx-4">
                 {

@@ -1,4 +1,3 @@
-
 import { MDXRemoteSerializeResult } from 'next-mdx-remote';
 
 export interface ICategory {
@@ -86,4 +85,3 @@ export interface IQueryOptions {
         pageSize: number;
     };
 }
-

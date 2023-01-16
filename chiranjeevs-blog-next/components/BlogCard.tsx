@@ -25,10 +25,11 @@ const BlogCard = ({article}:IPropType) => {
 
               <Image
               alt="profile_image"
-              loader={
-                ()=>`${process.env.API_BASE_URL}${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`
-              }
-                        src={`${process.env.API_BASE_URL}${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
+              // unoptimized={true}
+              // loader={
+              //   ()=>`${process.env.API_BASE_URL}${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`
+              // }
+                        src={`http://localhost:1337${article.attributes.author.data.attributes.avatar.data.attributes.formats.thumbnail.url}`}
                         height={40}
                         width={40}
                     />

@@ -6,10 +6,11 @@ import { ICategory } from '../types';
 
 interface IPropType {
     categories:ICategory[];
+    handleOnSearch:(query:string) => void;
 }
 
 
-const Tabs =({categories}:IPropType)=> {
+const Tabs =({categories,handleOnSearch}:IPropType)=> {
   
   const router=useRouter()
 
@@ -18,9 +19,9 @@ const isActiveLink=(category:ICategory)=>{
   return category.attributes.Slug ==router.query.category
 }
 
-const handleOnSearch=(query: string)=>{
-  console.log("query is",query)
-}
+// const handleOnSearch=(query: string)=>{
+//   console.log("query is",query)
+// }
   return (
     <div className="my-8 flex items-center justify-between border-b-2 border-gray-100">
         <ul className='flex items-center '>

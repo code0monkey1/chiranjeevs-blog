@@ -18,3 +18,5 @@ export const fetchArticles = async (queryString: string) =>
 
 export const fetchArticleBySlug = async (queryString: string) =>
     api.get(`/api/articles?${queryString}`);
+
+    

@@ -30,6 +30,7 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {
     const router = useRouter();
 
     const { page, pageCount } = articles.pagination;
+    //      ^?  
 
     const handleSearch = (query: string) => {
         router.push(`/?search=${query}`);

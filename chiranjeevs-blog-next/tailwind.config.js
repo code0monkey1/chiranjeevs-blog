@@ -7,13 +7,13 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary:"#99edd6",
-        "primary-dark":"#99edd6"
+        primary:"#53bd95",
+        "primary-dark":"#2c785c"
       }
       
     },
     fontFamily:{
-      sans:['Roboto','sans-serif']
+      sans:['Nunito','sans-serif','Roboto']
     }
   },
   plugins: [],

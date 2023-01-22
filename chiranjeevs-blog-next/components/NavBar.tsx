@@ -4,15 +4,15 @@ import React from 'react'
 
 const NavBar=()=>{
   return (
-    <nav className="flex justify-between " >
+    <nav className="flex justify-between" >
         
         <div>
         <Link href="/" >  
         <div className="flex items-center cursor-pointer mt-5">
-          <Image alt="profile icon" src="/github_image.png" width={100} height={100} />
-            <h1 className="font-bold ml-2 text-primary-dark text-5xl mt-5 ml-2 font-extrabold">
+          <Image alt="profile icon" src="/logo.png" width={60} height={80} />
+            <span className=" font-bold ml-2 text-primary text-5xl mt-5 ml-2 font-extrabold pb-4 ">
               {"Chiranjeev's Blog"}
-            </h1>
+            </span>
           </div>
         </Link>
       </div>

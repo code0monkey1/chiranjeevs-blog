@@ -5,9 +5,9 @@ import { ICategory } from '../types';
 
 
 interface IPropType {
-    categories:ICategory[];
-    handleOnSearch:(query:string) => void;
-}
+  categories:ICategory[];
+  handleOnSearch:(query:string) => void;
+  }
 
 
 const Tabs =({categories,handleOnSearch}:IPropType)=> {
@@ -23,7 +23,7 @@ const isActiveLink=(category:ICategory)=>{
 //   console.log("query is",query)
 // }
   return (
-    <div className="my-8 flex items-center justify-between border-b-2 border-gray-100">
+    <div className="my-8 flex items-center justify-between border-b-2 border-gray-100 flex-column sm:flex-row">
         <ul className='flex items-center '>
             <li
                     className={
@@ -35,15 +35,18 @@ const isActiveLink=(category:ICategory)=>{
                         }`
                     }>
 
+
+                      
+
             <Link href="/">Recent</Link>
             
           </li>
         {
-        categories.map(category =>
+          categories.map(category =>
         <li 
           key={category.id} 
            className={
-                        'mr-6 pb-6 border-b-4 rounded-sm ' +
+                        'mr-6 pb-6 border-b-4 rounded-sm  ' +
                         `${
                             isActiveLink(category)
                                 ? 'border-primary text-primary'

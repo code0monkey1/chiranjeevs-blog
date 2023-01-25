@@ -16,8 +16,7 @@ const NavBar=()=>{
           </div>
         </Link>
       </div>
-      
-        
+
       </nav>
   )
 }

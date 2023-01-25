@@ -1,5 +1,3 @@
-
-
 import axios from 'axios';
 
 const api = axios.create({
@@ -13,7 +11,7 @@ const api = axios.create({
 export const fetchCategories = async () => api.get('/api/categories');
 
 // Articles
-export const fetchArticles = async (queryString: string) =>
+export const fetchArticles = async (queryString :string) =>
     api.get(`/api/articles?${queryString}`);
 
 export const fetchArticleBySlug = async (queryString: string) =>

@@ -26,17 +26,20 @@ export interface ICollectionResponse<T> {
     meta: IResourceMeta;
 }
 
-export interface IImageData {
-    data: {
-        attributes: {
-            url: string;
-            formats: {
-                small: {
-                    url: string;
+export interface IImagesData {
+    data: IImage[];
+}
+
+export interface IImage{
+    id: number,
+    attributes: {
+                url: string;
+                formats: {
+                    small: {
+                        url: string;
+                    };
                 };
             };
-        };
-    };
 }
 
 export interface IAuthor {
@@ -63,7 +66,7 @@ export interface IArticlesAttribute {
     Title: string;
     body: string | MDXRemoteSerializeResult;
     Slug: string;
-    Image: IImageData;
+    Images: IImagesData;
     createdAt: string;
     author: IAuthor;
     shortDescription: string;

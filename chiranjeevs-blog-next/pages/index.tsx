@@ -35,6 +35,7 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {
 
     const handleSearch = (query: string) => {
         router.push(`/?search=${query}`);
+                               // ^?
     };
 
     return (
@@ -49,15 +50,18 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {
             </Head>
             <Tabs
                 categories={categories.items}
+                        //             ^?
                 handleOnSearch={debounce(handleSearch, 500)}
             />
             <ArticleList articles={articles.items} />
+                                    //      ^?
             <Pagination page={page} pageCount={pageCount} />
-        </div>
+        </div>             
     );
 };
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
+    
     // Articles
     const options: Partial<IQueryOptions> = {
         populate: ['author.avatar'],
@@ -78,15 +82,11 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 
     const queryString = qs.stringify(options);
 
-    const { data: articles }: AxiosResponse<ICollectionResponse<IArticle[]>> =
-        await fetchArticles(queryString);
+    const { data: articles }: AxiosResponse<ICollectionResponse<IArticle[]>> = await fetchArticles(queryString);                      
 
     // categories
-    const {
-        data: categories,
-    }: AxiosResponse<ICollectionResponse<ICategory[]>> =
-        await fetchCategories();
-
+    const {data: categories}:AxiosResponse<ICollectionResponse<ICategory[]>> = await fetchCategories();
+    
     return {
         props: {
             categories: {
@@ -94,7 +94,9 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
             },
             articles: {
                 items: articles.data,
+                                //^?
                 pagination: articles.meta.pagination,
+                                         //^?
             },
         },
     };

@@ -9,7 +9,7 @@ const NavBar=()=>{
         <div>
         <Link href="/" >  
         <div className="flex items-center cursor-pointer mt-5">
-          <Image alt="profile icon" src="/logo.png" width={60} height={80} />
+          <Image alt="profile icon" src="/github_image.png" width={90} height={90} />
             <span className=" font-bold ml-2 text-primary text-5xl mt-5 ml-2 font-extrabold pb-4 ">
               {"Chiranjeev's Blog"}
             </span>

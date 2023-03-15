@@ -9,7 +9,7 @@ interface IPropType{
 
 const ArticleList = ({articles}:IPropType) => {
   return (
-    <div className="grid lg:grid-cols-2 gap-16 mt-16 ">
+    <div className="grid lg:grid-cols-2 gap-16 mt-16">
 
       {
         

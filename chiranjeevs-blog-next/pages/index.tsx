@@ -35,7 +35,7 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {
 
     const handleSearch = (query: string) => {
         router.push(`/?search=${query}`);
-                               // ^?
+                           
     };
 
     return (
@@ -49,12 +49,10 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Tabs
-                categories={categories.items}
-                        //             ^?
+                categories={categories.items}   
                 handleOnSearch={debounce(handleSearch, 500)}
             />
-            <ArticleList articles={articles.items} />
-                                    //      ^?
+            <ArticleList articles={articles.items} />            
             <Pagination page={page} pageCount={pageCount} />
         </div>             
     );

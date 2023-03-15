@@ -11,7 +11,7 @@ const BlogCard = ({article}:IPropType) => {
    console.log("attributes",JSON.stringify(article.attributes,null,2))
   return (
     <div>
-      <Link href="#" passHref > 
+      <Link href="#"  > 
          
           <h1 className="mx-4 my-4 text-xl text-gray-600  font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary">
             {article.attributes.Title}

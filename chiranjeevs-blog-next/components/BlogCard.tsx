@@ -43,12 +43,13 @@ const BlogCard = ({article}:IPropType) => {
                 {" "}
                 {
                   article.attributes.author.data.attributes.lastname
-                }
+                } 
+            
             
           </div>
-
-
+          
           <div className="text-sm  font-bold text-gray-400">
+             
                {
                 formatDate(article.attributes.createdAt)
                }
@@ -58,7 +59,7 @@ const BlogCard = ({article}:IPropType) => {
        </div>
        <div className="text-gray-500  flex items-center mx-4 my-4 ">
           {article.attributes.shortDescription.slice(0,250)}{article.attributes.shortDescription.length>250?"...":''}
-     
+       
        </div>
     </div>
   )

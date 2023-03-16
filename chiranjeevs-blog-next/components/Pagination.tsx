@@ -22,13 +22,13 @@ const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropType) => {
     };
 
     const handlePaginate = async (direction: TDirection) => {
-        if (direction === 1 && isNextDisabled()) {
+        if (direction === 1 && isNextDisabled()) 
             return;
-        }
 
-        if (direction === -1 && isPrevDisabled()) {
+
+        if (direction === -1 && isPrevDisabled()) 
             return;
-        }
+        
         const queryString = qs.stringify({
             ...router.query,
             page: page+ direction,
@@ -40,14 +40,14 @@ const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropType) => {
         <div className="flex justify-center mt-24">
             <button
                 onClick={() => handlePaginate(-1)}
-                className={`${'bg-primary py-2 px-4 text-white w-24 rounded'} ${
+                className={`bg-primary py-2 px-4 text-white w-24 rounded ${
                     isPrevDisabled() ? 'disabled' : ''
                 }`}>
                 Previous
             </button>
             <button
                 onClick={() => handlePaginate(1)}
-                className={`${'bg-primary py-2 px-4 text-white w-24 rounded ml-4'} ${
+                className={`bg-primary py-2 px-4 text-white w-24 rounded ml-4 ${
                     isNextDisabled() ? 'disabled' : ''
                 }`}>
                 Next

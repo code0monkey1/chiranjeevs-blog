@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer components { /* you can create custom classes applicable to whole app */
   .disabled {
     @apply opacity-50 cursor-not-allowed
   }

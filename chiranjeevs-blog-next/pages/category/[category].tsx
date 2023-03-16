@@ -29,9 +29,8 @@ interface IPropType {
     slug: string;
 }
 
-
-
 const Category = ({ categories, articles, slug }: IPropType) => {
+    
     const { page, pageCount } = articles.pagination;
     const router = useRouter()
     const { category: categorySlug } = router.query;

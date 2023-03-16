@@ -15,7 +15,7 @@ const BlogCardWithImage = ({ article }: IPropType) => {
                     {article.attributes.Title.slice(0,25)+"..."}
                 </span>
             </Link>
-            <Image alt='book' src="/read.svg" width={140} height={140} />
+            <Image alt='book' src="/brain.svg" width={140} height={140} />
         </div>
     );
 };

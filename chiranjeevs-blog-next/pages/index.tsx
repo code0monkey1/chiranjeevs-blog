@@ -41,7 +41,7 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {
     return (
         <div>
             <Head>
-                <title>Chiranjeev's Blog Homepage</title>
+                <title>Chiranjeev&apos;s Blog Homepage</title>
                 <meta
                     name="description"
                     content="Chiranjeev's Blog"
@@ -57,7 +57,7 @@ const Home: NextPage<IPropTypes> = ({ categories, articles }) => {
         </div>             
     );
 };
-
+// special named function to render props server side into the component
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     
     // Articles
@@ -94,7 +94,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
                 items: articles.data,
                                 //^?
                 pagination: articles.meta.pagination,
-                                         //^?
+                                          //^?
             },
         },
     };

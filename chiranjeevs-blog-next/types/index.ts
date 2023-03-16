@@ -21,7 +21,7 @@ export interface IResourceMeta {
     pagination: IPagination;
 }
 
-export interface ICollectionResponse<T> {
+export type ICollectionResponse<T> ={
     data: T;
     meta: IResourceMeta;
 }
@@ -66,7 +66,7 @@ export interface IArticlesAttribute {
     Title: string;
     body: string | MDXRemoteSerializeResult;
     Slug: string;
-    Images: IImagesData;
+    Image: IImagesData;
     createdAt: string;
     author: IAuthor;
     shortDescription: string;

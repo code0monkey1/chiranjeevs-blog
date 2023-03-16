@@ -9,6 +9,7 @@ interface IPropType{
 const BlogCard = ({article}:IPropType) => {
 
    console.log("attributes",JSON.stringify(article.attributes,null,2))
+   
   return (
     <div>
       <Link href="#"  > 

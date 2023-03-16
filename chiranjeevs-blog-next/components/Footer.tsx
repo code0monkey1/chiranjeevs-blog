@@ -4,14 +4,15 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer  className="mt-12 fixed bottom-0  bg-white flex justify-around w-full">
+    <footer  className="mt-12 fixed bottom-0  bg-white flex justify-around w-full ">
         <div className="container mx-auto flex flex-col sm:flex-row w-full justify-around sm:ml-4">
       
           <Link href="/">
             <div className="flex flex-auto  justify-center">
             
             <Image className="flex items-center justify-center md:justify-start py-4 " src={"/logo.png"}alt="profile_small" height={35} width={40}/>
-            <span className="ml-3 text-md text-gray-500 pt-6">{"Chiranjeev's Blog"}</span>
+            <span className="ml-3 text-md text-gray-500 pt-6">Chiranjeev's Blog   <span> |   ©   2023 </span></span> 
+          
 
             </div>
           </Link>

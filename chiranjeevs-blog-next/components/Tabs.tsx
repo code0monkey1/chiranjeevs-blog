@@ -5,8 +5,8 @@ import { ICategory } from '../types';
 
 
 interface IPropType {
-  categories:ICategory[];
-  handleOnSearch:(query:string) => void;
+    categories:ICategory[];
+    handleOnSearch:(query:string) => void;
   }
 
 
@@ -27,7 +27,7 @@ const isActiveLink=(category:ICategory)=>{
         <ul className='flex items-center '>
             <li
                     className={
-                        'mr-6 pb-6 border-b-4 rounded-sm ' +
+                        'mr-6  pb-6 border-b-4 rounded-sm ' +
                         `${
                             router.pathname === '/'
                                 ? 'border-primary text-primary'

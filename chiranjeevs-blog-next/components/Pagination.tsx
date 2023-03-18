@@ -5,6 +5,8 @@ import { TDirection } from '../types';
 interface IPropType {
     page: number;
     pageCount: number;
+    // we put this as optional , as this is only used in category pages 
+    // and not on the main page .
     redirectUrl?: string;
 }
 
@@ -20,7 +22,9 @@ const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropType) => {
     const isPrevDisabled = (): boolean => {
         return page <= 1;
     };
-
+   
+     // whenever you handle pagination , modify the page number , keep the 
+     // rest of the query the same, using router
     const handlePaginate = async (direction: TDirection) => {
         if (direction === 1 && isNextDisabled()) 
             return;
@@ -30,10 +34,10 @@ const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropType) => {
             return;
         
         const queryString = qs.stringify({
-            ...router.query,
             page: page+ direction,
         });
-
+        
+   // we always use a question mark before a query string
         router.push(`${redirectUrl}?${queryString}`);
     };
     return (

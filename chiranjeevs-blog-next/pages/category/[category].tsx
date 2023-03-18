@@ -66,6 +66,9 @@ const Category = ({ categories, articles, slug }: IPropType) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
+     
+ // the query is fetched from the url query parameters
+
     const options: IQueryOptions = {
         populate: ['author.avatar'],
         sort: ['id:desc'],

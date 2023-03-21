@@ -11,7 +11,7 @@ function Footer() {
             <div className="flex flex-auto  justify-center">
             
             <Image className="flex items-center justify-center md:justify-start py-4 " src={"/logo.png"}alt="profile_small" height={35} width={40}/>
-            <span className="ml-3 text-md text-gray-500 pt-6">Chiranjeev's Blog   <span> |   ©   2023 </span></span> 
+            <span className="ml-3 text-md text-gray-500 pt-6">Chiranjeev&apos;s Blog   <span> |   ©   2023 </span></span> 
           
 
             </div>

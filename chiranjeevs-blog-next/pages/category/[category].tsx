@@ -39,6 +39,12 @@ const Category = ({ categories, articles, slug }: IPropType) => {
         return capitalizeFirstLetter(makeCategory(slug));
     };
     const handleSearch = (query: string) => {
+        
+        // every time you push things into the router 
+        // you re-trigger the getServerSideProps function 
+        // which fetches new date from the server according to the 
+        // query string 
+        
         router.push(`/category/${categorySlug}/?search=${query}`);
     };
     return (
@@ -84,10 +90,13 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     };
 
     if (query.search) {
+      console.log("The query is",JSON.stringify(query,null,2))
         options.filters = {
+
             Title: {
                 $containsi: query.search,
             },
+            
         };
     }
 

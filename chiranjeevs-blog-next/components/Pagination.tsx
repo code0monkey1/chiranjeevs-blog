@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import qs from 'qs';
 import React from 'react';
 import { TDirection } from '../types';
+
 interface IPropType {
     page: number;
     pageCount: number;
@@ -13,6 +14,7 @@ interface IPropType {
 const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropType) => {
     
     const router = useRouter();
+
     console.log("page",page)
 
     const isNextDisabled = (): boolean => {
@@ -40,6 +42,7 @@ const Pagination = ({ page, pageCount, redirectUrl = '/' }: IPropType) => {
    // we always use a question mark before a query string
         router.push(`${redirectUrl}?${queryString}`);
     };
+    
     return (
         <div className="flex justify-center mt-24">
             <button

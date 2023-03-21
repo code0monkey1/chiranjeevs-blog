@@ -14,7 +14,7 @@ const ArticleList = ({articles}:IPropType) => {
       {
         
         articles.map((article ,index)=>{
-            return  index==1?
+            return  (index===1 || index===2)?
              <BlogCardWithImage key={article.id} article={article}/>:
              <BlogCard key={article.id} article={article}/>  
         }

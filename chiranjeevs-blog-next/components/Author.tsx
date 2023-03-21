@@ -25,7 +25,7 @@ const Author =({article}:TPropTypes)=>{
                     />
           </div>
 
-          <div className="text-sm  font-bold text-gray-600 mx-4">
+          <div className="text-sm  font-bold text-gray-600 px-4">
                 {
                   article.attributes.author.data.attributes.firstname
                 }

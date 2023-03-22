@@ -72,24 +72,9 @@ const  Slug=({article,notFound=false}:TPropTypes) =>{
       <div className=" col-span-1">
 
 			 <div className="sticky top-0">
-        <form method="post" action="https://sendfox.com/form/1g82vx/1dpq79" className="sendfox-form" id="1dpq79" data-async="true" data-recaptcha="true">
 
 			
-                    <h2 className="font-bold text-gray-600 text-lg">
-                        SignUp for my Newsletter
-                    </h2>
-                    <p className="mt-4 text-gray-500">
-                        Get the blog post delivered
-                        straight to your inbox
-                    </p>
-                    <input
-                        className="border w-full p-2 pl-3 my-6 outline-primary"
-                        type="email"
-                        placeholder="Your email"
-                    />
-                    <button type="submit" className="border-2 border-primary rounded py-1 px-6 text-primary font-bold">
-                        Subscribe
-                    </button>
+                 
                     <hr className="my-6 border-gray-100" />
                     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                         <span className="text-gray-500 mr-2">Share : </span>
@@ -166,7 +151,8 @@ const  Slug=({article,notFound=false}:TPropTypes) =>{
                           
                     </span>
                     <hr className="my-6 border-gray-100" />
-               </form>
+                    
+             
                 </div>
                 
         </div>

@@ -17,17 +17,13 @@ const NavBar=()=>{
           </div>
          
         </Link>
-      <ul className='flex items-end cursor-pointer mt-5 gap-1'>
-            <li className='mr-6 font-medium text-gray-600'>
-               <a href='#' className='hover:text-gray-400'>Login</a>
-            </li>
-            <li>
-               <a href='#' className='bg-primary px-2 py-2 text-white rounded-sm hover:bg-primary-dark transition-all'>SignUp</a>
-            </li>
-       </ul>
+  
 
       </nav>
   )
 }
 
 export default NavBar
+
+
+       

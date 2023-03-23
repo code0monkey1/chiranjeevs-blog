@@ -5,7 +5,8 @@
             "file:///Users/chiranjeevthomas/typewriter": "__default__profile__"
         },
         "emptyWindows": {
-            "1679485943215": "__default__profile__"
+            "1679485943215": "__default__profile__",
+            "1679516520286": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
@@ -20,6 +21,9 @@
         "emptyWindows": [
             {
                 "backupFolder": "1679485943215"
+            },
+            {
+                "backupFolder": "1679516520286"
             }
         ]
     },
@@ -162,10 +166,6 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
-                    },
-                    {
-                        "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -349,8 +349,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -554,10 +553,6 @@
                         "label": "E&&xtensions"
                     },
                     {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
-                    },
-                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -594,7 +589,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1095,10 +1091,6 @@
                         }
                     },
                     {
-                        "id": "workbench.userDataSync.actions.turnOn",
-                        "label": "Turn on Settings Sync..."
-                    },
-                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -1191,11 +1183,6 @@
             "workbench.action.closeActiveEditor": {
                 "label": "Ctrl+F4",
                 "userSettingsLabel": "ctrl+f4"
-            },
-            "workbench.action.closeFolder": {
-                "label": "⌘K F",
-                "isNative": false,
-                "userSettingsLabel": "cmd+k f"
             },
             "workbench.action.closeWindow": {
                 "label": "Shift+Cmd+W",
@@ -1599,15 +1586,14 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 28,
             "activityBarWidth": 48,
-            "sideBarWidth": 256,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///Users/chiranjeevthomas/typewriter",
-            "backupPath": "/Users/chiranjeevthomas/Documents/chiranjeevs-blog/chiranjeevs-blog-next/~/root/Backups/15eb1be2373ceb536623d3bcf5a03e9a",
+            "backupPath": "/Users/chiranjeevthomas/Documents/chiranjeevs-blog/chiranjeevs-blog-next/~/root/Backups/1679516520286",
             "uiState": {
                 "mode": 1,
                 "x": 0,

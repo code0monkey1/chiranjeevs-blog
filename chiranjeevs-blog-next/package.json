@@ -26,6 +26,8 @@
     "typescript": "4.9.4"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.0",
     "@types/qs": "^6.9.7",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",

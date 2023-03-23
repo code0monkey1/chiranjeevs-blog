@@ -11,3 +11,8 @@
 2023-03-22 17:23:19.933 [info] update#setState ready
 2023-03-22 17:24:42.101 [info] [UtilityProcess id: 2, type: extensionHost, pid: 28445]: received exit event with code 0
 2023-03-22 17:24:42.101 [info] Extension host with pid 28445 exited with code: 0, signal: unknown.
+2023-03-23 01:52:03.508 [info] [UtilityProcess id: 3, type: extensionHost, pid: <none>]: creating new...
+2023-03-23 01:52:03.522 [info] [UtilityProcess id: 3, type: extensionHost, pid: 64127]: successfully created
+2023-03-23 01:52:06.381 [info] [UtilityProcess id: 3, type: extensionHost, pid: 64127]: waiting to exit...
+2023-03-23 01:52:10.950 [info] [UtilityProcess id: 3, type: extensionHost, pid: 64127]: received exit event with code 0
+2023-03-23 01:52:10.950 [info] Extension host with pid 64127 exited with code: 0, signal: unknown.
